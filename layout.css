@@ -12,7 +12,7 @@ Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippin
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #FFFFFF url(images/image01.jpg) repeat-x left top;
+	background: #FFFFFF url(img/image01.jpg) repeat-x left top;
 	text-align: justify;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
@@ -88,7 +88,7 @@ blockquote {
 	height: 49px;
 	margin-right: 2px;
 	padding: 12px 30px 0px 30px;
-	background: url(images/image02.jpg) no-repeat right 16px;
+	background: url(img/image02.jpg) no-repeat right 16px;
 	text-decoration: none;
 	color: #525250;
 }
@@ -160,7 +160,7 @@ blockquote {
 
 #column1 h2 {
 	padding-bottom: 6px;
-	background: url(images/image03.jpg) repeat-x left bottom;
+	background: url(img/image03.jpg) repeat-x left bottom;
 	letter-spacing: -1px;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -175,7 +175,7 @@ blockquote {
 
 #column2 h2 {
 	padding-bottom: 6px;
-	background: url(images/image03.jpg) repeat-x left bottom;
+	background: url(img/image03.jpg) repeat-x left bottom;
 	letter-spacing: -1px;
 	text-transform: uppercase;
 	font-size: 20px;
@@ -184,7 +184,7 @@ blockquote {
 }
 
 .separator {
-	background: url(images/image03.jpg) repeat-x left bottom;
+	background: url(img/image03.jpg) repeat-x left bottom;
 }
 
 .more {
@@ -199,7 +199,7 @@ blockquote {
 	width: 900px;
 	margin: 0px auto;
 	padding: 5px 0px;
-	background: url(images/image03.jpg) repeat-x left top;
+	background: url(img/image03.jpg) repeat-x left top;
 }
 
 #footer p {

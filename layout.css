@@ -65,7 +65,7 @@ blockquote {
 }
 
 #header {
-	width: 1280px;
+	width: 100%;
 	height: 127px;
 	margin: 0 auto;
 	padding: 0px;

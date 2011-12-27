@@ -80,7 +80,7 @@ blockquote {
 #navigation ul {
 	margin: 0px;
 	list-style: none;
-	background: #FFFFFF url(img/image01.jpg) repeat-x ;
+	background: url(img/image01.jpg) repeat-x ;
 }
 
 #navigation li {

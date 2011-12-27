@@ -12,7 +12,7 @@ Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippin
 body {
 	margin: 0px;
 	padding: 0px;
-
+	background:url(img/image01.jpg) repeat-x left top;
 	background-image:url(img/mu.jpg);
 	background-position:center;
 	background-repeat:no-repeat;
@@ -75,7 +75,6 @@ blockquote {
 	height: 51px;
 	margin: 0px auto;
 	padding: 0px;
-	background:url(img/image01.jpg) repeat-x left top;
 }
 
 #navigation ul {

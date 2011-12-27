@@ -75,8 +75,7 @@ blockquote {
 	height: 51px;
 	margin: 0px auto;
 	padding: 0px;
-	background-image:url(img/image01.jpg);
-	background-repeat:repeat-x;
+	background-image:#000000 url(img/image01.jpg) repeat-x;
 }
 
 #navigation ul {

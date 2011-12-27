@@ -12,7 +12,7 @@ Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippin
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #FFFFFF url(img/image01.jpg) repeat-x ;
+
 	background-image:url(img/mu.jpg);
 	background-position:center;
 	background-repeat:no-repeat;
@@ -80,7 +80,7 @@ blockquote {
 #navigation ul {
 	margin: 0px;
 	list-style: none;
-	background: url(img/image01.jpg) repeat-x ;
+	background: #FFFFFF url(img/image01.jpg) repeat-x ;
 }
 
 #navigation li {

@@ -107,7 +107,7 @@ blockquote {
 #logotime {
 	height: 64px;
 	margin: 0 auto;
-	padding-left:180px;
+	padding-left:175px;
 }
 
 #logo {
@@ -120,7 +120,7 @@ blockquote {
 #time {
         margin: 0 auto;
 	padding-top:12px;
-	padding-left:0px;
+	padding-right:0px;
 }
 
 #logo h1 {

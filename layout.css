@@ -109,6 +109,13 @@ blockquote {
 	height: 64px;
 	margin: 0 auto;
 	padding-top: 12px;
+	padding-left:80px;
+}
+
+#time {
+	height: 64px;
+	margin: 0 auto;
+	padding-top: 12px;
 }
 
 #logo h1 {

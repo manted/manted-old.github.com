@@ -69,6 +69,7 @@ blockquote {
 	height: 127px;
 	margin: 0 auto;
 	padding: 0px;
+	padding-top:12px;
 	background:#FFFFFF url(img/image01.jpg) repeat-x left top;
 }
 
@@ -113,7 +114,7 @@ blockquote {
 	width: 900px;
 	height: 64px;
 	margin: 0 auto;
-	padding-top: 12px;
+	padding-top: 0px;
 }
 
 #time {

@@ -13,7 +13,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 
-	background-image:url(img/mu.jpg);
+	background-image:url(/img/mu.jpg);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -116,7 +116,7 @@ blockquote {
 	height: 64px;
 	margin: 0 auto;
 	padding-top: 30px;
-	padding-left:1000px;
+	padding-left:100px;
 }
 
 #logo h1 {

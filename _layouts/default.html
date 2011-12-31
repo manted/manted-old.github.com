@@ -43,7 +43,28 @@
    <div id="content">
       <div id="page">
 	<div id="column1">
-	  <div class="box1">	   	      
+	  <div class="box1">
+	    <script type="text/javascript">
+	      var d = new Date()
+	      var time = d.getHours()
+
+	      document.write("<b>Good </b>")
+	      if (time>=6 && time<12) 
+		{
+		document.write("<b>morning</b>")
+		}
+
+		else if(time>=12 && time<18)
+                {
+                document.write("<b>afternoon</b>")
+                }
+                  else if((time>=18 && time<24) || (time>0 && time<6))
+                  {
+                  document.write("<b>evening</b>")
+                  }
+              document.write("<b> my friends!~</b>")
+            </script>
+
 	      {{ content }}		    
 	  </div>
 	</div>

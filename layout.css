@@ -117,6 +117,12 @@ blockquote {
 	padding-top: 0px;
 }
 
+#grating {
+        margin: 0 auto;
+	padding-top:12px;
+	text-align:left;
+}
+
 #time {
         margin: 0 auto;
 	padding-top:12px;

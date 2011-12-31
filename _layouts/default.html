@@ -36,10 +36,14 @@
                 {
                 document.write("<b>afternoon</b>")
                 }
-                  else if((time>=18 && time<24) || (time>0 && time<6))
+                  else if(time>=18 && time<22)
                   {
                   document.write("<b>evening</b>")
                   }
+                    else if((time>=22 && time<=24) || (time>=0 && time<5))
+                    {
+                    document.write("<b>night</b>")
+                    }
               document.write("<b> my friends!~</b>")
             </script>
             </div>

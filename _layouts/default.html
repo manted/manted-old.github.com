@@ -44,6 +44,7 @@
       <div id="page">
 	<div id="column1">
 	  <div class="box1">
+	    <div id="grating">
 	    <script type="text/javascript">
 	      var d = new Date()
 	      var time = d.getHours()
@@ -64,13 +65,36 @@
                   }
               document.write("<b> my friends!~</b>")
             </script>
-
+            </div>
 	      {{ content }}		    
 	  </div>
 	</div>
 
 
 	<div id="column2">
+	   <div id="grating">
+	    <script type="text/javascript">
+	      var d = new Date()
+	      var time = d.getHours()
+
+	      document.write("<b>Good </b>")
+	      if (time>=6 && time<12) 
+		{
+		document.write("<b>morning</b>")
+		}
+
+		else if(time>=12 && time<18)
+                {
+                document.write("<b>afternoon</b>")
+                }
+                  else if((time>=18 && time<24) || (time>0 && time<6))
+                  {
+                  document.write("<b>evening</b>")
+                  }
+              document.write("<b> my friends!~</b>")
+            </script>
+            </div>
+
 	  <h2>Recently</h2>
 	  <p>学习 充实自己 对生活充满希望～</p>
 	  <p>Everything will be ok.</p>

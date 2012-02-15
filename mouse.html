@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!-- Template Design by cssMoban.com | http://www.cssMoban.com | Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippines -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Manted's Space</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+  </head>
+  <body>
+<style type="text/css"> 
+.spanstyle{position:absolute;visibility:visible;top:-50px;font-size:9pt;color: #000000;font-weight:bold;} 
+</style> 
+<script> 
+var x,y 
+var step=20 
+var flag=0 
+var message="站长手册欢迎您！！！"//改成你需要的字 
+message=message.split("") 
+var xpos=new Array() 
+for (I=0;I<=message.length-1;I++) { 
+xpos[I]=-50} 
+var ypos=new Array() 
+for (I=0;I<=message.length-1;I++) { 
+ypos[I]=-50} 
+function handlerMM(e){ 
+x = (document.layers) ? E.pageX : document.body.scrollLeft+event.clientX 
+y = (document.layers) ? E.pageY : document.body.scrollTop+event.clientY 
+flag=1} 
+function makesnake() { 
+if (flag==1 && document.all) { 
+for (I=message.length-1; I>=1; I--) { 
+xpos[I]=xpos[I-1]+step 
+ypos[I]=ypos[I-1] } 
+xpos[0]=x+step 
+ypos[0]=y 
+for (I=0; I<message.length-1; I++) { 
+var thisspan = eval("span"+(I)+".style") 
+thisspan.posLeft=xpos[I] 
+thisspan.posTop=ypos[I] } } 
+else if (flag==1 && document.layers) { 
+for (I=message.length-1; I>=1; I--) { 
+xpos[I]=xpos[I-1]+step 
+ypos[I]=ypos[I-1] } 
+xpos[0]=x+step 
+ypos[0]=y 
+for (I=0; I<message.length-1; I++) { 
+var thisspan = eval("document.span"+I) 
+thisspan.left=xpos[I] 
+thisspan.top=ypos[I]} } 
+var timer=setTimeout("makesnake()",30)} 
+</script> 
+<body onLoad="makesnake()" > 
+<script> 
+for (I=0;I<=message.length-1;I++) { 
+document.write("<span id='span"+I+"'class='spanstyle'>") 
+document.write(message[I]) 
+document.write("</span>")} 
+if (document.layers){ 
+document.captureEvents(Event.MOUSEMOVE);} 
+document.onmousemove = handlerMM; 
+</script> 
+  </body>
+</html>
+

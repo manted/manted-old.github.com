@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title><!-- Insert your title here --></title>
+</head>
+<body>
+    <script type="text/javascript" src='./jquery.js'/></script>
+    <script type='text/javascript'/>
+    $(document).ready(function(){ 
+    
+       $("#test").mousedown(function(){
+
+    $(this).mousemove(function(event){
+    
+    
+       $(this).css("left",event.pageX-50);
+       $(this).css("top",event.pageY-50);
+    
+    }).mouseup(function(){
+    
+      $("#test").unbind("mousemove");
+    }); 
+   });
+   
+    });
+    </script>
+    <style>
+    div{
+        border:1px solid red;
+        position:fixed;
+    }
+    </style>
+    <div style="width:100px;height:100px;" id="test">aa</div>
+</body>
+</html>

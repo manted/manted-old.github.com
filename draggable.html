@@ -1,37 +1,35 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-    "http://www.w3.org/TR/html4/strict.dtd"
-    >
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title><!-- Insert your title here --></title>
-</head>
-<body>
-    <script type="text/javascript" src='./jquery.js'/></script>
-    <script type='text/javascript'/>
-    $(document).ready(function(){ 
-    
-       $("#test").mousedown(function(){
-
-    $(this).mousemove(function(event){
-    
-    
-       $(this).css("left",event.pageX-50);
-       $(this).css("top",event.pageY-50);
-    
-    }).mouseup(function(){
-    
-      $("#test").unbind("mousemove");
-    }); 
-   });
-   
-    });
-    </script>
-    <style>
-    div{
-        border:1px solid red;
-        position:fixed;
+<title>draggable</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script language="JavaScript" type="text/javascript">
+var drag_=false
+var D=new Function('obj','return document.getElementById(obj);')
+var oevent=new Function('e','if (!e) e = window.event;return e')
+function Move_obj(obj){
+ var x,y;
+ D(obj).onmousedown=function(e){
+  drag_=true;
+  with(this){
+   style.position="absolute";var temp1=offsetLeft;var temp2=offsetTop;
+   x=oevent(e).clientX;y=oevent(e).clientY;
+   document.onmousemove=function(e){
+    if(!drag_)return false;
+    with(this){
+     style.left=temp1+oevent(e).clientX-x+"px";
+     style.top=temp2+oevent(e).clientY-y+"px";
     }
-    </style>
-    <div style="width:100px;height:100px;" id="test">aa</div>
+   }
+  }
+  document.onmouseup=new Function("drag_=false");
+ }
+}
+</script>
+<body>
+<div id="drag" style="background-color:#0066CC;width:280px;height:160px;padding:20px;border:1px #003399 solid;font-size:10.5pt;color:white" onmouseover='Move_obj("drag")'>
+  <p>drag this!</p>
+  <p>/</p>
+</div>
 </body>
 </html>
